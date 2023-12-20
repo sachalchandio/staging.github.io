@@ -1,0 +1,42 @@
+.phone-section .banner-background {
+  background: url(../images/hughesnet-phone-page-banner-image.webp);
+}
+
+.phone-section .hughsenet-heading h1 {
+  max-width: 680px;
+}
+.phone-section .hughsenet-heading p {
+  max-width: 683px;
+}
+.phone-section .hughsenet-heading label {
+  font-size: 40px;
+}
+.phone-page-hughsnet .hughsnet-cards {
+  max-width: 700px;
+}
+.phone-page-hughsnet .hughsnet-card1 {
+  width: 42%;
+}
+.phone-page-hughsnet .starter-plan h3 {
+  line-height: 1.1;
+}
+.phone-page-hughsnet .starter-plan h3 span {
+  font-size: 20px;
+}
+.phone-page-hughsnet .plan-bottom-lines p {
+  top: -80px;
+}
+.keep-current .glace-heading p:nth-child(3) {
+  font-size: 14px;
+  margin-top: 8px;
+}
+.keep-current .glace-1 {
+  align-items: center;
+}
+.keep-current {
+  background: transparent;
+}
+.data-saving-feacture .at-all-glace {
+  background-image: url(../images/hughsnet-phone-page-lot-more-section.webp);
+  background-repeat: no-repeat;
+}

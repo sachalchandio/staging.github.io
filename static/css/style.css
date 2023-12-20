@@ -1,72 +1,3 @@
-@font-face {
-  font-family: "SourceSansPro-Light";
-  src: url(../fonts/source-sans-pro/SourceSansPro-Light.otf);
-}
-
-@font-face {
-  font-family: "SourceSansPro-Regular";
-  src: url(../fonts/source-sans-pro/SourceSansPro-Regular.otf);
-}
-
-@font-face {
-  font-family: "SourceSansPro-LightIt";
-  src: url(../fonts/source-sans-pro/SourceSansPro-LightIt.otf);
-}
-
-@font-face {
-  font-family: "SourceSansPro-Bold";
-  src: url(../fonts/source-sans-pro/SourceSansPro-Bold.otf);
-}
-
-@font-face {
-  font-family: "SourceSansPro-Semibold";
-  src: url(../fonts/source-sans-pro/SourceSansPro-Semibold.otf);
-}
-
-@font-face {
-  font-family: "Fontfabric-UniNeueBook";
-  src: url(../fonts/uni-neue/Fontfabric-UniNeueBook.otf);
-}
-
-@font-face {
-  font-family: "Fontfabric-UniNeueBold";
-  src: url(../fonts/uni-neue/Fontfabric-UniNeueBold.otf);
-}
-
-@font-face {
-  font-family: "Fontfabric-UniNeueRegular";
-  src: url(../fonts/uni-neue/Fontfabric-UniNeueLight.otf);
-}
-
-@font-face {
-  font-family: "SourceSansPro-Semibold";
-  src: url(../fonts/uni-neue/Fontfabric-UniNeueRegular.otf);
-}
-
-:root {
-  /* Colors */
-  --color-primary: #202e39;
-  --color-secondary: #003f73;
-  --color-tertiary: #006ead;
-  --color-background: #f6f6f6;
-  --color-accent: #5ea215;
-  --color-link: #677a89;
-  --color-light: #dee4e8;
-  --color-white: #fff;
-  --color-black: #000;
-  --color-gray: #f3f3f3;
-
-  /* Font Families */
-  --font-family-primary: "Fontfabric-UniNeueBook";
-  --font-family-secondary: "Fontfabric-UniNeueBold";
-  --font-family-tertiary: "Fontfabric-UniNeueRegular";
-  --font-family-light: "SourceSansPro-Light";
-  --font-family-regular: "SourceSansPro-Regular";
-  --font-family-bold: "SourceSansPro-Bold";
-  --font-family-semibold: "SourceSansPro-Semibold";
-  --font-family-light-italic: "SourceSansPro-LightIt";
-}
-
 body {
   margin: 0;
 }
@@ -81,921 +12,1407 @@ body {
   margin: 0;
 }
 
+.all-main p {
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+}
+
 .all-main a {
   text-decoration: none;
+}
+
+.all-main {
+  font-family: "Open Sans", sans-serif;
 }
 
 .all-main img {
   width: 100%;
 }
 
-.banner-section .banner-background {
-  background-image: url(../images/viasait-homepage-banner-background.webp);
-  height: 583px;
-  background-size: cover;
+.banner-background {
+  background-image: url(../images/hughesnet-home-banner-image.webp);
+  height: 675px;
   background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  padding-left: 50px;
-}
-
-.banner-headings {
-  max-width: 579px;
-}
-
-.banner-headings h1 {
-  font-size: 50px;
-  color: var(--color-primary);
-  font-family: var(--font-family-tertiary);
-  font-weight: 400;
-  line-height: 57px;
-  padding-bottom: 20px;
-}
-
-.banner-headings h1 span {
-  font-family: var(--font-family-primary);
-  font-weight: 600;
-}
-
-.banner-headings h2 {
-  font-size: 18px;
-  color: var(--color-primary);
-  font-weight: 700;
-  font-family: var(--font-family-secondary);
-  padding-bottom: 10px;
-  line-height: 25px;
-}
-
-.banner-headings p {
-  font-family: var(--font-family-light);
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.ctaa-buttons {
-  display: flex;
-  align-items: center;
-  column-gap: 20px;
-  margin-top: 40px;
-}
-
-.ctaa-buttons a {
-  color: var(--color-primary);
-  font-family: var(--font-family-semibold);
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  padding: 10px 21px;
-  border: 3px solid var(--color-primary);
-  transition: all 0.3s;
-}
-
-.ctaa-buttons a:hover {
-  background-color: var(--color-primary);
-  color: var(--color-light);
-  transition: all 0.3s;
-  border: 3px solid transparent;
-}
-
-/* topbar */
-.top-bar {
-  background-color: var(--color-primary);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 11px 0px;
-}
-
-.top-bar span {
-  display: flex;
-  align-items: center;
-  column-gap: 30px;
-  color: var(--color-white);
-  font-family: var(--font-family-primary);
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 30px;
-}
-
-.top-bar span a {
-  color: var(--color-white);
-  font-family: var(--font-family-regular);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  background-color: var(--color-link);
-  padding: 10px 21px;
-}
-
-/* internet-plans */
-.internet-plans-heading {
-  text-align: center;
-}
-
-.internet-plans-heading p {
-  color: var(--color-secondary);
-  font-family: var(--font-family-semibold);
-  font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-
-.internet-plans-heading h2 {
-  color: var(--color-black);
-  font-family: var(--font-family-primary);
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 36px;
-}
-
-.all-streaming .streaming-1 img,
-.viasat-data img {
-  width: unset;
-}
-
-.all-streaming .streaming-1,
-.viasat-data {
-  display: flex;
-  align-items: center;
-}
-
-.streaming-2 span {
-  max-width: 179px;
-}
-
-.all-internet-plans {
-  max-width: 930px;
-  margin: 0 auto;
-  display: flex;
-  padding: 35px 0px;
-  column-gap: 30px;
-}
-
-.plans-card-1 p {
-  color: var(--color-tertiary);
-  font-family: var(--font-family-regular);
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 20px;
-}
-
-.plans-card-1 h3 {
-  color: var(--color-black);
-  font-family: var(--font-family-tertiary);
-  font-size: 50px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 47px;
-}
-
-.plans-card-1 h4 {
-  color: var(--color-black);
-  font-family: var(--font-family-light-italic);
-  font-size: 16px;
-  font-style: italic;
-  font-weight: 300;
-  line-height: 20px;
-}
-
-.plans-card-1 {
-  width: 31.2%;
-  position: relative;
-  background: var(--color-white);
-  box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.15);
-  padding: 20px 0px 0px;
-  display: inline-grid;
-}
-.business-card-1 {
-  position: relative;
-}
-.plans-card-1::after,
-.phone-cards::after,
-.business-card-1::after {
-  background-image: url(../images/viasat-homepage-internet-plans-line-image.webp);
-  background-repeat: no-repeat;
-  height: 9.875px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  content: "";
-  width: 100%;
   background-size: cover;
 }
 
-.phone-card-image img {
-  width: unset;
-}
-
-.phone-card h3 {
-  color: var(--color-black);
-  font-family: var(--font-family-tertiary);
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 45px;
-  max-width: 530px;
-}
-.phone-card h3 label {
-  color: var(--color-secondary);
-  font-family: var(--font-family-regular);
-}
-.phone-cards {
+.hughsenet-section {
   display: flex;
-  max-width: 898px;
+  max-width: 1620px;
   margin: 0 auto;
-  column-gap: 28px;
-  background: var(--color-white);
-  box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.15);
-  padding: 26px 16px 10px;
-  align-items: center;
-  position: relative;
-  margin-bottom: 37px;
-}
-.phone-card h4 {
-  color: var(--color-secondary);
-  font-family: var(--font-family-regular);
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 20px;
-  text-align: end;
-}
-.phone-card span {
-  font-size: 50px;
-  font-family: var(--font-family-tertiary);
-}
-.phone-card span del {
-  font-size: 30px;
-}
-.phone-card span sup {
-  color: #1d5700;
-  font-family: var(--font-family-primary);
-  font-weight: 500;
-}
-.viasat-data {
-  column-gap: 30px;
-  justify-content: center;
-  border-radius: 3px;
-  border: 2px solid var(--color-tertiary);
-  padding: 7px 15px;
-  margin: 12px 0px;
-}
-.phone-card span sub {
-  color: var(--color-tertiary);
-  font-family: var(--font-family-primary);
-  font-weight: 500;
-}
-.viasat-data span {
-  text-align: end;
-  color: var(--color-accent);
-  font-size: 16px;
-  font-family: var(--font-family-primary);
-  font-weight: 600;
-}
-
-.viasat-data span label {
-  font-size: 12px;
-  color: var(--color-black);
-  font-family: var(--font-family-primary);
-  font-weight: 400;
-}
-
-.streaming-1 span {
-  color: var(--color-black);
-  text-align: right;
-  font-family: var(--font-family-light);
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 20px;
-}
-
-.all-streaming .streaming-1 {
-  justify-content: space-between;
-  margin-bottom: 11px;
-}
-
-.bottom-paragraph {
-  padding: 8px 12px;
-  background: var(--color-background);
-}
-
-.bottom-paragraph p {
-  text-align: center;
-  color: var(--color-black);
-  font-family: var(--font-family-tertiary);
-  font-size: 12px;
-  font-weight: 300;
-  line-height: 16px;
-}
-
-.moths-different {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0px 12px 0;
-  margin-bottom: 0px;
-}
-
-.moths-different span {
-  color: var(--color-black);
-  font-family: var(--font-family-tertiary);
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 47px;
-}
-
-.three-moths p {
-  font-size: 13px;
-}
-
-.moths-different span sub {
-  color: var(--color-tertiary);
-  font-family: var(--font-family-primary);
-  font-weight: 500;
-}
-
-.moths-different span sup {
-  color: #1d5700;
-  font-family: var(--font-family-primary);
-  font-weight: 500;
-}
-
-.moths-different-thing {
-  padding: 0px 12px;
-  margin-top: 13px;
-}
-
-.moths-different label,
-.moths-different-thing label {
-  color: var(--color-black);
-  font-family: var(--font-family-light);
-  font-size: 24px;
-  font-style: normal;
-  line-height: 20px;
-}
-
-.viasat-data-internet {
-  padding: 0 17px;
-}
-
-.interbnwt-plans-small-paragraph p {
-  max-width: 1132px;
-  margin: 0 auto;
-  color: var(--color-black);
-  text-align: center;
-  font-family: var(--font-family-light);
-  font-size: 12px;
-  font-weight: 300;
-}
-
-.internet-palns-section {
-  padding: 39px 0px;
-  background: #f3f3f3;
-}
-
-/* what-viasat */
-.all-viasat-what {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1099px;
-  margin: 0 auto;
+  padding: 0 20px;
+  height: 100%;
   align-items: center;
 }
 
-.viasat-1 {
+.hughsenet-section .hughsenet-heading {
   width: 45%;
 }
 
-.viasat-1 h3 {
-  color: var(--color-primary);
-  font-family: var(--font-family-semibold);
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 20px;
+.hughsenet-heading h1 {
+  color: #000;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  max-width: 620px;
 }
 
-.viasat-1 h2 {
-  color: var(--color-black);
-  font-family: var(--font-family-primary);
+.hughsenet-heading label {
+  color: #0091c4;
   font-size: 30px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 37px;
-  margin-bottom: 15px;
 }
 
-.viasat-1 p,
-.viasat-1 ul li {
-  color: var(--color-black);
-  font-family: var(--font-family-light);
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 20px;
+.hughsenet-heading span {
+  color: #ff5820;
 }
 
-.viasat-1 ul li::marker {
-  font-weight: 100;
+.hughsenet-heading-list {
+  margin-top: 13px;
 }
 
-.viasat-1 ul {
-  margin: 0;
-  padding-left: 20px;
-  margin-bottom: 30px;
-}
-
-.what-viasat {
-  padding: 79px 0px;
-}
-
-.what-viasat-order a {
-  color: var(--color-white);
-  background: var(--color-primary);
-  font-family: var(--font-family-semibold);
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 18px;
-  padding: 10px 21px;
-}
-
-.viasat-background {
-  background: #f3f3f3;
-}
-
-.rulal-area {
-  padding: 0;
-}
-
-.rulal-area .all-viasat-what {
-  max-width: unset;
-  align-items: unset;
-}
-
-.rulal-area .rulal-area-card {
-  background-color: var(--color-primary);
+.hughsenet-heading-list h3 {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 4px;
+  column-gap: 9px;
+  padding-bottom: 8px;
 }
 
-.rulal-area .viasat-1 {
-  width: 50%;
-}
-
-.rulal-area .viasat-1 p {
-  max-width: 521px;
-  color: var(--color-white);
-  line-height: 22px;
-  opacity: 0.5;
-}
-
-.rulal-area-card h4 {
-  color: var(--color-white);
-  font-family: var(--font-family-primary);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 20px;
-}
-
-.rulal-area-card h3,
-.rulal-area-card h2 {
-  color: var(--color-white);
-}
-
-.rulal-area-card h3 {
-  letter-spacing: 2px;
-}
-
-.rulal-area-card .what-viasat-order {
-  margin-top: 30px;
-}
-
-.rulal-area-card .what-viasat-order a {
-  background-color: var(--color-link);
-}
-
-.satellite-internet,
-.rural-area-internet {
-  max-width: 521px;
-  margin: 0 auto;
-}
-
-.availability .what-viasat-order {
-  margin-top: 30px;
-}
-
-/* faqs */
-.faqs-container {
-  width: 80%;
-  margin: 50px auto;
-}
-
-.faqs-container h2 {
-  color: var(--color-black);
-  font-family: var(--font-family-primary);
-  font-size: 30px;
+.hughsenet-heading-list h3 span {
+  color: #000;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 37px;
-  padding-bottom: 29px;
+  line-height: 24px;
 }
 
-button.accordion {
-  width: 100%;
-  border: none;
-  /* border-bottom: 1px solid #9FAFBC; */
-  outline: none;
-  text-align: left;
-  padding: 0px 0px 18px;
-  font-size: 16px;
-  color: var(--color-black);
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.2s linear;
+.hughsenet-heading-list h3 span img {
+  transform: translate(0px, 2px);
+}
+
+.hughsenet-heading p {
+  margin-top: 5px;
+  max-width: 600px;
+}
+
+.main-button {
+  display: flex;
+  column-gap: 28px;
+}
+
+.main-button a {
+  display: flex;
+  border-radius: 10px;
+  background: #0091c4;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  padding: 13px 16px;
+  align-items: center;
+  column-gap: 8px;
+  margin-top: 40px;
+}
+
+.main-button a img {
+  width: unset;
+}
+
+.main-button .call-icon {
+  background-color: #ff5820;
+}
+
+/* online fast image */
+
+.online-fast-image {
+  /* background-image: url(../images/wow-home-online-fast-image.webp); */
+  height: 202px;
+}
+
+.all-online-fast {
+  display: flex;
+  max-width: 1620px;
+  padding: 36px 20px;
+  margin: 0 auto;
+  column-gap: 349px;
+  align-items: center;
+}
+
+.all-online-fast .online-fast-heading h2 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.all-online-fast .online-fast-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 19px;
+}
+
+.all-online-buttn {
+  border: 5px solid #ffffff;
+  padding: 8px 10px;
+  border-radius: 17px;
+}
+
+.all-online-buttn a {
+  display: flex;
+  column-gap: 16px;
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  border-radius: 10px;
+  background: #ff5820;
+  padding: 13px 9px;
+  align-items: center;
+}
+
+.all-online-buttn a img {
+  width: unset;
+}
+
+.online-fast-heading-cta {
   position: relative;
-  background-color: transparent;
-  font-family: var(--font-family-semibold);
 }
 
-button.accordion:after {
-  background: url(../images/viasait-homepage-faqs-section-arrow.webp);
-  content: "";
-  position: absolute;
-  top: 7px;
-  bottom: 0;
-  right: 0;
-  width: 17.975px;
-  height: 10px;
-  background-repeat: no-repeat;
-}
-
-.all-faqs {
-  padding-bottom: 9px;
-  padding-top: 20px;
+.arrow-container {
   position: relative;
+  top: -43px;
 }
 
-.all-faqs::after {
-  content: "";
+.arrow {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  background: #9fafbc;
-  height: 1px;
+  top: 0px;
+  left: -156%;
+  transform: translateX(50%);
+  animation: arrowAnimation 5s ease-in-out;
 }
 
-.accordion-content {
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-in-out;
+@keyframes arrowAnimation {
+  0% {
+    top: -50px;
+    transform: translateX(-50%);
+  }
+
+  50% {
+    top: 0px;
+    transform: translateX(50%) rotate(0deg);
+  }
+
+  100% {
+    top: 0px;
+    transform: translateX(50%);
+  }
 }
 
-.accordion.is-open {
-  border: none;
+.online-fast-image p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
 }
 
-.accordion.is-open + .accordion-content {
+.glace-1 {
+  display: flex;
+  max-width: 1620px;
+  padding: 0 20px;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: end;
+}
+
+.glace-1 .glace-heading {
+  width: 38%;
+}
+
+.glace-heading-image {
+  width: 54%;
+}
+
+.at-a-glance {
+  padding: 78px 0px;
+  background: #f9f9f9;
+}
+
+.glace-heading h2 {
+  color: #000;
+  font-size: 32px;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 
-.accordion-content p {
-  color: var(--color-black);
-  font-family: var(--font-family-light);
-  font-size: 14px;
+.glace-heading h2 span {
+  color: #0091c4;
+}
+
+.hughsnet-plan-heading {
+  text-align: center;
+}
+
+.hughsnet-plan-heading h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.hughsnet-plan-heading h2 span {
+  color: #0091c4;
+}
+
+.hughsnet-plan-heading h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 14px 0px 28px;
+}
+
+.hughsnet-plan-heading p {
+  text-align: center;
+  font-size: 13.8px;
+  font-weight: 500;
+  max-width: 1555px;
+  margin: 0 auto;
+}
+
+.hughsnet-plan-background {
+  background-image: url(../images/hughsenet-home-page-hughsnet-plan-background.webp);
+  background-repeat: no-repeat;
+  margin-top: 52px;
+  background-position: 71% 50%;
+}
+
+.hughsnet-cards {
+  max-width: 1320px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hughsnet-card1 {
+  border-radius: 4px;
+  border: 3px solid #0091c4;
+  background: #fff;
+  padding: 22px 15px 18px;
+  width: 20.6%;
+}
+
+.starter-plan {
+  display: flex;
+  column-gap: 25px;
+  align-items: center;
+}
+
+.starter-plan h3 {
+  color: #0091c4;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 0.8;
+}
+
+.starter-plan h3 span {
+  font-size: 16px;
+  color: #000;
+}
+
+.starter-plan h4 {
+  color: #ff5820;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 50px;
+  margin-top: -28px;
+}
+
+.month-plan .month-plan-prices {
+  border-radius: 5px;
+  background: #ff5820;
+  padding: 6px 9px;
+  width: 129px;
+  height: 88px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2;
+}
+
+.month-plan .month-plan-prices:nth-child(2) {
+  background-color: #2caa00;
+}
+
+.month-plan .month-plan-prices h3 {
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.month-plan .month-plan-prices h3:nth-child(2) {
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.month-plan .month-plan-prices:nth-child(2) h3:nth-child(2) {
+  font-size: 20px;
+}
+
+.month-decide {
+  font-size: 25px;
+}
+
+.month-plan .month-plan-prices:nth-child(2) h3:nth-child(1) {
+  font-size: 35px;
+}
+
+.month-plan .month-plan-prices:nth-child(2) h3:nth-child(1) sup {
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.month-plan {
+  display: flex;
+  column-gap: 12px;
+  margin-top: 8px;
+}
+
+.speed-plans {
+  background-color: #0091c4;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 13px;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.speed-plans span:nth-child(1) {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 41px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.speed-plans span:nth-child(2) {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.speed-plans span:nth-child(2) sup {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.satellite-plan h4 {
+  color: #ff5820;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 8px 0px;
+}
+
+.hughsenet-heading-list.plans-listing h3 span {
+  color: #000;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.hughsenet-heading-list.plans-listing img {
+  width: unset;
+}
+
+.hughsenet-heading-list.plans-listing h3 {
+  padding-bottom: 0px;
+  max-width: 268px;
+}
+
+.starter-plan h4 sup {
+  font-size: 20px;
+}
+
+.plan-button {
+  justify-content: center;
+  align-items: center;
+}
+
+.plan-button a {
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+.plan-button .call-icon {
+  padding: 11px 9px;
+}
+
+.hughsnet-plan-section {
+  padding: 35px 0px 63px;
+}
+
+.plan-bottom-lines {
+  padding: 37px 0 24px;
+}
+
+.plan-bottom-lines p {
+  text-align: center;
+  font-size: 16px;
   font-weight: 300;
 }
-.banner-ctaa-icons,
-.top-bar a {
+
+.get-your-plan .online-fast-image {
+  background-image: url(../images/hughesnet-home-online-fast-image2.webp);
+  background-size: cover;
+}
+
+.get-your-plan .all-online-buttn a {
+  background-color: #0091c4;
+}
+
+.get-your-plan .all-online-fast {
+  justify-content: end;
+}
+
+.get-your-plan .all-online-fast .online-fast-heading h3 {
+  text-align: right;
+}
+
+.fusion-card1 {
+  border-color: #ff5820;
+}
+
+.fusion-card1 .starter-plan h3 {
+  color: #ff5820;
+}
+
+.hughsnet-package-services {
   display: flex;
-  column-gap: 10px;
-  transition: all 0.5s;
+  max-width: 960px;
+  margin: 0 auto;
+  column-gap: 30px;
+  padding-top: 40px;
 }
-.what-viasat-order a {
-  display: inline;
+
+.hughsnet-phone-services,
+.free-equipment,
+.discount-for-three,
+.free-equipment {
+  display: flex;
+  align-items: center;
 }
-.top-bar a img,
-.what-viasat-order a img {
-  width: unset;
+
+.hughsnet-phone-services {
+  column-gap: 13px;
 }
-.what-viasat-order a img {
-  transform: translate(-7px, 3px);
+
+.hughsnet-package-services-card1 {
+  border-radius: 8px;
+  border: 3px solid #0091c4;
+  background: #fff;
+  padding: 15px;
 }
-.banner-ctaa-icons .call-white {
-  display: none;
-  transition: all 0.5s;
+
+.hughsnet-package-services-card2 {
+  border-radius: 5px;
+  border: 3px solid #ff5820;
+  background: #fff;
+  padding: 18px;
 }
-.banner-ctaa-icons:hover .call-white {
+
+.discount-for-three,
+.free-equipment {
+  justify-content: space-between;
+}
+
+.discount-for-three {
+  margin-top: 13px;
+}
+
+.hughsnet-phone-services h4 {
+  color: #000;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.hughsnet-phone-services h4 img {
+  transform: translate(0px, 3px);
+}
+
+.hughsnet-phone-services h4 span {
+  color: #0091c4;
+  font-weight: 700;
+}
+
+.hughsnet-phone-services p {
+  line-height: normal;
+}
+
+.free-equipment h4 {
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 37px;
+}
+
+.discount-for-three h4 {
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.discount-for-three h4 label {
+  color: #0091c4;
+  font-weight: 700;
+}
+
+.free-equipment label {
+  color: #ff5820;
+}
+
+.hughsnet-bonus-zone h4 {
+  color: #ff5820;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/* intro-fusion */
+.intro-fusion .glace-1 {
+  display: flex;
+  max-width: 1747px;
+  padding: 0 0px;
+  margin: 0 0 0 auto;
+  align-items: center;
+}
+
+.intro-fusion .glace-heading h2 {
+  color: #ff5820;
+}
+
+.intro-fusion .glace-heading h2 span {
+  font-weight: 700;
+}
+
+.intro-fusion {
+  padding: 0;
+  background: #f9f9f9;
+}
+
+.intro-fusion .glace-1 .glace-heading {
+  width: 36%;
+}
+
+.intro-fusion .main-button a {
+  background: #ff5820;
+  margin-top: 40px;
+}
+
+.fusion-hugshnet-plan .hughsnet-plan-background {
+  background: url(../images/hughsnet-home-page-fusion-section-background-image.webp);
+  margin-top: 0px;
+}
+
+.fusion-hugshnet-plan .hughsnet-cards {
+  max-width: 1350px;
+}
+
+.starter-plan sup {
+  font-size: 18px;
+}
+
+.fusion-hugshnet-plan .plan-button a {
+  margin-top: 20px;
+}
+
+a.call-icon.business-call {
+  margin-top: 28px;
+}
+
+.equipment-less p {
+  color: #000;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 5px 0px 5px;
+}
+
+.discount-text span {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.discount-text strike {
+  color: #ff5820;
+  font-size: 16px;
+}
+
+.discount-text strike span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.discount-text {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  justify-content: end;
+}
+
+.inter-sufring-listing ul li {
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.lot-more-value {
+  padding: 0;
+  background: transparent;
+}
+
+.lot-more-value .at-all-glace {
+  background: url(../images/hughsnet-home-page-lot-more-section.webp);
+  height: 611px;
+  background-repeat: no-repeat;
+}
+
+.lot-more-value .glace-1 {
+  height: 100%;
+  align-items: center;
+}
+
+.inter-sufring-listing h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.inter-sufring-listing p {
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 450px;
+}
+
+.lot-more-value .glace-1 .glace-heading {
+  width: 42%;
+}
+
+/* faqs-question */
+.faqs-container {
+  margin: 0 auto;
+  max-width: 1264px;
+  padding: 0 20px;
+}
+
+.accordion {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 18px;
+}
+
+.accordion .accordion-item {
+  width: 44%;
+  border-radius: 10px;
+  background: #f5f5f5;
+  box-shadow: 0px 5px 16px 0px rgba(8, 15, 52, 0.06);
+  padding: 16px 32px;
+  margin-bottom: 20px;
+}
+
+.accordion button {
+  position: relative;
   display: block;
-  transition: all 0.5s;
+  text-align: left;
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  font-weight: 500;
+  line-height: 28px;
+  color: #242424;
+  font-size: 22px;
+  font-weight: 500;
 }
-.banner-ctaa-icons:hover .call-blue {
+
+.accordion button:hover,
+.accordion button:focus {
+  cursor: pointer;
+  color: #000;
+}
+
+.accordion button:hover::after,
+.accordion button:focus::after {
+  cursor: pointer;
+  color: #000;
+  border: 1px solid #03b5d2;
+}
+
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: -6px;
+  right: 0;
+  width: 41px;
+  height: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0091c4;
   display: none;
-  transition: all 0.5s;
 }
-.banner-ctaa-icons img {
-  width: unset;
+
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 17px;
+  left: 10px;
+  width: 20px;
+  height: 3px;
+  background-color: #fff;
 }
-.internet-plans-heading,
-.top-bar {
-  padding: 20px 20px;
+
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: 18px;
+  width: 3px;
+  height: 18px;
+  background-color: #fff;
 }
-@media only screen and (max-width: 1366px) {
-  .phone-cards {
-    max-width: 837px;
+
+.accordion button[aria-expanded="true"] .icon::after {
+  width: 0;
+}
+
+.accordion button[aria-expanded="true"] + .accordion-content {
+  opacity: 1;
+  max-height: unset;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+
+.accordion .accordion-content p {
+  color: #5e5e5e;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-top: 20px;
+}
+
+.accordion-title strong {
+  color: #0091c4;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.faqs-container h2 {
+  color: #000;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 75px;
+}
+
+.Faqs-section {
+  padding: 89px 0px;
+}
+
+.hughsnet-plan-heading h2 label {
+  color: #ff5820;
+}
+
+.internet-services .hughsnet-plan-heading p {
+  text-align: left;
+  font-weight: 500;
+  line-height: 25px;
+  max-width: 1400px;
+  margin-top: 25px;
+}
+
+.hughsnet-services-background {
+  display: flex;
+  max-width: 1620px;
+  margin: 0 auto;
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 27px;
+}
+
+.hughsnet-services-card1 {
+  width: 24%;
+}
+
+.hughsnet-services-card1 {
+  width: 40%;
+}
+
+.hughsnet-services-card1 {
+  width: 25%;
+}
+
+.high-speed-connectivity {
+  display: flex;
+  border-radius: 46.5px 0px 0px 46.5px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 11px;
+}
+
+.hugsnet-content h4 {
+  color: #0091c4;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.hugsnet-content p {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: right;
+  line-height: normal;
+  max-width: 330px;
+}
+
+.high-speed-connectivity {
+  margin-bottom: 70px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.high-speed-connectivity:nth-child(4) {
+  margin-bottom: 0;
+}
+
+.ligthen-fast .hugsnet-content h4 {
+  text-align: left;
+}
+
+.ligthen-fast .hugsnet-content p {
+  text-align: left;
+}
+.hughsnet-services-card2 img {
+  transform: translate(0px, 5px);
+}
+.ligthen-fast .high-speed-connectivity {
+  border-radius: 0px 46.5px 46.5px 0px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+@media only screen and (max-width: 1600px) {
+  .hughsenet-section,
+  .all-online-fast,
+  .glace-1,
+  .hughsnet-plan-heading p {
+    max-width: 1220px;
   }
-  .phone-card h3 {
-    font-size: 27px;
+
+  .intro-fusion .glace-1 {
+    max-width: 1339px;
+  }
+
+  .hughsenet-heading h1 {
+    font-size: 36px;
+  }
+
+  .all-online-fast .online-fast-heading h2 {
+    font-size: 32px;
+  }
+
+  .glace-1 {
+    align-items: center;
+  }
+
+  .glace-heading-image {
+    width: 50%;
+  }
+
+  .glace-1 .glace-heading {
+    width: 45%;
+  }
+
+  .all-main p {
+    font-size: 16px;
+  }
+
+  .all-online-fast {
+    column-gap: 298px;
+  }
+
+  .glace-heading h2 {
+    font-size: 25px;
+  }
+
+  .intro-fusion .glace-1 .glace-heading {
+    width: 40%;
   }
 }
-@media only screen and (max-width: 1077px) {
-  .top-bar span {
-    column-gap: 26px;
-    font-size: 19px;
-  }
-}
-@media only screen and (max-width: 1141px) {
-  .all-viasat-what {
-    max-width: 865px;
+
+@media only screen and (max-width: 1340px) {
+  .hughsenet-section .hughsenet-heading {
+    width: 55%;
   }
 
-  .viasat-1 p,
-  .viasat-1 ul li {
-    font-size: 13px;
+  .hughsenet-section .hughsenet-heading:nth-child(2) {
+    width: 45%;
   }
 
-  .viasat-1 h2 {
-    font-size: 23px;
-    line-height: 1.3;
+  .hughsenet-section,
+  .all-online-fast,
+  .glace-1,
+  .hughsnet-plan-heading p {
+    max-width: 1020px;
   }
 
-  .rulal-area-card h2 br {
-    display: none;
-  }
-
-  .home-install .rulal-area-card {
-    padding: 0px 30px 0px 30px;
-  }
-
-  .interbnwt-plans-small-paragraph p {
-    max-width: 1049px;
-    padding: 0 20px;
-  }
-
-  .all-internet-plans {
-    max-width: 863px;
-  }
-
-  .plans-card-1 h3 {
-    font-size: 40px;
-  }
-
-  .viasat-data span {
-    font-size: 14px;
-  }
-
-  .viasat-data span label {
-    font-size: 10px;
-  }
-
-  .moths-different span {
+  .all-online-fast .online-fast-heading h2 {
     font-size: 26px;
   }
 
-  .internet-plans-heading h2 {
-    font-size: 28px;
+  .all-online-fast .online-fast-heading h3 {
+    font-size: 16px;
   }
 
-  .rulal-area-card h4 {
-    font-size: 14px;
+  .glacing-hughsnet .glace-heading-image img {
+    height: 500px;
+    object-fit: cover;
   }
 
-  .viasat-1 h2 {
-    margin-bottom: 8px;
+  .intro-fusion .glace-1 {
+    max-width: 1101px;
   }
 
-  .rulal-area .rulal-area-card {
-    padding: 0px 18px 0px 20px;
+  /* .intro-fusion{
+        padding: 70px 0px;
+    } */
+  .lot-more-value .glace-1 .glace-heading {
+    width: 54%;
   }
 
-  .rulal-area .viasat-1 p {
-    line-height: 20px;
+  .inter-sufring-listing ul li {
+    font-size: 16px;
   }
 
-  .what-viasat-order a {
-    font-size: 12px;
-    padding: 7px 21px;
+  .intro-fusion .glace-1 .glace-heading {
+    width: 44%;
   }
 
-  .rulal-area-card .what-viasat-order {
-    margin-top: 20px;
-  }
-}
-
-@media only screen and (max-width: 920px) {
-  .banner-headings {
-    max-width: 506px;
+  .lot-more-value .at-all-glace {
+    background: url(../images/hughsnet-home-page-lot-more-section.webp);
+    height: 449px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 
-  .banner-headings h1 {
-    font-size: 40px;
-    line-height: 1.2;
-  }
-
-  .banner-headings h2 {
-    font-size: 15px;
-  }
-
-  .banner-section .banner-background {
-    background-position: 39% 58%;
-  }
-
-  .top-bar span {
-    font-size: 17px;
-  }
-
-  .internet-plans-heading h2 {
-    font-size: 23px;
-  }
-
-  .all-internet-plans {
-    flex-direction: column;
-    align-items: center;
-    row-gap: 25px;
-  }
-
-  .all-streaming .streaming-1,
-  .viasat-data {
-    justify-content: space-between;
-  }
-
-  .plans-card-1 {
-    width: 52.2%;
-  }
-
-  .all-viasat-what {
-    flex-direction: column;
-    row-gap: 50px;
-  }
-
-  .viasat-1 {
-    width: 80%;
-  }
-
-  .rulal-area .viasat-1 {
+  .lot-more-value .glace-1 .glace-heading {
     width: 100%;
   }
 
-  .satellite-internet {
-    margin: 0 auto;
+  .main-button a {
+    margin-top: 7px;
   }
 
-  .rulal-area .rulal-area-card {
-    padding: 30px 0px 30px 0px;
-    margin: 0;
+  .inter-sufring-listing ul li {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1139px) {
+  .banner-background {
+    background-position: bottom;
   }
 
-  .home-install .all-viasat-what,
-  .rulal-area .all-viasat-what {
+  .hughsenet-heading h1 {
+    font-size: 34px;
+  }
+
+  .all-online-fast .online-fast-heading h2 {
+    font-size: 24px;
+  }
+
+  .hughsenet-section,
+  .all-online-fast,
+  .glace-1,
+  .hughsnet-plan-heading p {
+    max-width: 940px;
+  }
+
+  .all-online-fast {
+    column-gap: 259px;
+  }
+
+  .intro-fusion .glace-1 {
+    max-width: 980px;
+  }
+
+  .glace-heading p {
+    font-size: 14px;
+  }
+
+  .glace-heading h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .intro-fusion .main-button a {
+    margin-top: 18px;
+  }
+
+  .main-button a {
+    font-size: 16px;
+    padding: 8px 10px;
+  }
+
+  .intro-fusion .glace-1 .glace-heading {
+    width: 48%;
+  }
+
+  .intro-fusion {
+    padding: 33px 0px;
+  }
+
+  .fusion-hugshnet-plan .hughsnet-plan-background {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .accordion .accordion-item {
+    width: 42%;
+  }
+
+  .online-fast-image p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 899px) {
+  .hughsenet-section,
+  .all-online-fast,
+  .glace-1 {
+    flex-direction: column;
+  }
+
+  .hughsenet-section .hughsenet-heading {
+    width: 100%;
+  }
+
+  .banner-background {
+    background-position: unset;
+  }
+
+  .banner-section .hughsenet-section {
+    justify-content: center;
+  }
+
+  .all-online-fast {
+    padding: 0px 20px;
+    row-gap: 20px;
+  }
+
+  .online-fast-image {
+    height: unset;
+    padding: 20px 0px;
+  }
+
+  .all-online-buttn a {
+    font-size: 16px;
+    padding: 6px 6px;
+  }
+
+  .all-online-buttn {
+    padding: 4px 4px;
+  }
+
+  .online-fast-image p {
+    max-width: 500px;
+    margin: 10px auto 0;
+  }
+
+  .arrow {
+    position: absolute;
+    left: -229%;
+  }
+
+  .glace-1 .glace-heading,
+  .glace-heading-image,
+  .intro-fusion .glace-1 .glace-heading {
+    width: 100%;
+  }
+
+  .glacing-hughsnet .glace-heading-image img {
+    height: unset;
+  }
+
+  .glacing-hughsnet .glace-1 {
+    row-gap: 30px;
+  }
+
+  .at-a-glance {
+    padding: 40px 0px;
+  }
+
+  .hughsnet-plan-heading p {
+    max-width: 700px;
+    font-size: 14px;
+  }
+
+  .hughsnet-cards {
+    max-width: 700px;
+  }
+
+  .starter-plan h4 {
+    font-size: 27px;
+  }
+
+  .starter-plan h3 {
+    font-size: 24px;
+  }
+
+  .starter-plan {
+    column-gap: 10px;
+  }
+
+  .starter-plan h3 span {
+    font-size: 12px;
+  }
+
+  .month-plan .month-plan-prices:nth-child(2) h3:nth-child(1) {
+    font-size: 30px;
+  }
+
+  .month-plan .month-plan-prices h3 {
+    font-size: 25px;
+  }
+
+  .month-plan {
+    row-gap: 10px;
+    flex-direction: column;
+  }
+
+  .hughsnet-card1 {
+    width: 27%;
+  }
+
+  .month-plan .month-plan-prices {
+    width: unset;
+    height: unset;
+  }
+
+  .hughsenet-heading-list.plans-listing h3 span {
+    font-size: 13px;
+  }
+
+  .get-your-plan .online-fast-image {
+    background-position: top;
+  }
+
+  .intro-fusion .glace-1 .glace-heading {
+    max-width: 700px;
+  }
+
+  .glace-1 {
+    row-gap: 30px;
+  }
+
+  .lot-more-value .glace-1 {
+    justify-content: center;
     row-gap: 0;
   }
 
-  .faqs-container {
-    width: 95%;
+  .accordion .accordion-item {
+    width: 70%;
+    margin: 15px auto;
   }
 
-  .what-viasat.rulal-area .rulal-area-card {
-    margin-top: -4px;
-  }
-
-  .rural-area-internet {
-    max-width: 521px;
-    margin: 0 auto;
-  }
-  .phone-cards {
-    max-width: unset;
-    width: 45%;
-    flex-direction: column;
-  }
-  .phone-card {
-    width: 100%;
-  }
-  .phone-card h4 {
-    text-align: left;
-    padding-bottom: 15px;
-  }
-  .phone-card h3 {
-    font-size: 27px;
-    padding-bottom: 22px;
+  .Faqs-section {
+    padding: 20px 0px;
   }
 }
 
-@media only screen and (max-width: 750px) {
-  .banner-section .banner-background {
-    padding-left: 25px;
-    padding-right: 25px;
-    background-image: url(../images/viasait-homepage-banner-background-mobile.webp);
-    height: 830px;
-    background-position: unset;
-    align-items: start;
-    padding-top: 28px;
-  }
-
-  .banner-headings h1 {
+@media only screen and (max-width: 767px) {
+  .hughsenet-heading h1 {
     font-size: 30px;
+    line-height: 41px;
   }
 
-  .banner-headings h2 {
-    font-size: 16px;
-    line-height: 23px;
-  }
-
-  .top-bar span {
-    flex-direction: column;
-    text-align: center;
-    font-size: 30px;
-    padding: 25px;
-    line-height: 37px;
-  }
-
-  .top-bar span a {
-    margin-top: 37px;
-  }
-
-  .internet-plans-heading h2 {
-    font-size: 30px;
-  }
-
-  .internet-palns-section {
-    padding: 39px 25px;
-  }
-
-  .plans-card-1 {
-    width: 100%;
-  }
-
-  .interbnwt-plans-small-paragraph p {
-    max-width: unset;
-    padding: 0 0px;
-    font-size: 10px;
-    line-height: 16px;
-  }
-
-  .bottom-paragraph {
-    max-width: unset;
-  }
-
-  .bottom-paragraph p {
-    text-align: left;
-    padding: 0 20px;
-    line-height: 16px;
-  }
-
-  .viasat-1 {
-    width: 100%;
-  }
-
-  .what-viasat {
-    padding: 25px;
-  }
-
-  .viasat-1 h2 {
-    font-size: 30px;
-    line-height: 37px;
-  }
-
-  .what-viasat.rulal-area {
-    padding: 28px 0px;
-  }
-
-  .rural-area-internet,
-  .satellite-internet {
-    max-width: unset;
+  .hughsenet-section {
     padding: 0 25px;
   }
 
-  .rulal-area-card h4 {
-    font-size: 16px;
-  }
-
-  .viasat-1 p,
-  .viasat-1 ul li {
+  .all-main p {
     font-size: 14px;
   }
-  .phone-cards {
-    width: 92%;
+
+  .banner-section .hughsenet-section p {
+    line-height: 20px;
   }
-  .phone-card h3 {
-    line-height: 35px;
+
+  .hughsenet-heading-list h3 span {
+    font-size: 13px;
+    line-height: 24px;
   }
-  .phone-card.phone-card-image {
-    padding: 10px 0px 20px;
+
+  .online-fast-heading {
+    text-align: center;
+  }
+
+  .all-online-fast .online-fast-heading h2 {
+    font-size: 30px;
+  }
+
+  .all-online-fast .online-fast-heading h3 {
+    max-width: 300px;
+    margin: 14px auto 0px;
+  }
+
+  .main-button a {
+    font-size: 14px;
+    padding: 9px 8px;
+  }
+
+  .main-button {
+    display: flex;
+    column-gap: 15px;
+  }
+
+  .all-online-fast {
+    row-gap: 39px;
+  }
+
+  .free-paragraph p {
+    font-size: 10px;
+    line-height: normal;
+    max-width: 364px;
+    margin-top: 37px;
+  }
+
+  .glace-heading h2 {
+    text-align: center;
+  }
+
+  .glace-heading p {
+    line-height: 20px;
+  }
+
+  .hughsenet-heading-list h3 span {
+    font-size: 14px;
+  }
+
+  .hughsnet-cards {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .hughsnet-plan-background,
+  .fusion-hugshnet-plan .hughsnet-plan-background {
+    background-image: unset;
+    height: unset;
+    margin-top: 24px;
+  }
+
+  .hughsnet-card1,
+  .fusion-hugshnet-plan .hughsnet-card1 {
+    width: 67.9%;
+    margin: 0 auto;
+  }
+
+  .fusion-hugshnet-plan .hughsnet-cards {
+    margin-top: 24px;
+  }
+
+  .month-plan {
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+
+  .month-plan .month-plan-prices {
+    width: 48%;
+  }
+
+  .starter-plan {
+    column-gap: 30px;
+  }
+
+  .starter-plan h4 {
+    font-size: 50px;
+  }
+
+  .starter-plan h3 {
+    font-size: 30px;
+  }
+
+  .hughsnet-plan-heading h2 {
+    font-size: 22px;
+  }
+
+  .hughsnet-plan-heading h3 {
+    font-size: 16px;
+    margin: 6px 0px 10px;
+  }
+
+  .hughsnet-plan-heading p {
+    font-size: 14px;
+    text-align: justify;
+    max-width: 349px;
+  }
+
+  .get-your-plan .all-online-fast .online-fast-heading h3 {
+    text-align: center;
+  }
+
+  .hughsnet-plan-section {
+    padding: 35px 0px 80px;
+  }
+
+  .get-your-plan .all-online-fast {
+    flex-direction: column-reverse;
+  }
+
+  .intro-fusion .glace-heading h2 {
+    max-width: 300px;
+    text-align: left;
+    line-height: normal;
+  }
+
+  .at-a-glance {
+    padding: 30px 25px;
+  }
+
+  .intro-fusion .glace-heading-image {
+    display: none;
+  }
+
+  .hughsnet-plan-section.fusion-hugshnet-plan {
+    padding: 35px 0px 40px;
+  }
+
+  .fusion-hugshnet-plan .hughsnet-plan-heading p {
+    text-align: center;
+    line-height: normal;
+  }
+
+  .lot-more-value {
+    margin-top: 60px;
+  }
+
+  .lot-more-value .at-all-glace {
+    height: unset;
+    background-image: unset;
   }
 }

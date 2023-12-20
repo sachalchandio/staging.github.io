@@ -1,0 +1,250 @@
+.plans-banner-section .banner-background {
+  background: url(../images/hughsnet-plans-page-banner-section.webp);
+}
+
+.hughsnet-plans-page-plans .hughsnet-cards {
+  max-width: 1560px;
+  padding: 0 20px;
+}
+
+.hughsnet-plans-page-plans .hughsnet-card1 {
+  width: 17%;
+}
+
+/* table css */
+
+.pricing-table {
+  max-width: 1422px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.all-table-heading th {
+  color: #0091c4;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 0.8;
+}
+
+.all-table-heading th span {
+  font-size: 16px;
+  color: #ff5820;
+}
+
+.all-table-heading th label {
+  color: #000;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 21px;
+}
+
+.startering-plan td {
+  color: #000;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.startering-plan td span {
+  color: #ff5820;
+  font-size: 30px;
+}
+
+.startering-plan td sub {
+  color: #0091c4;
+  font-size: 24px;
+}
+
+.pro-plans td {
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.pro-plans td span {
+  color: #ff5820;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.pro-plus-plans td {
+  color: #0091c4;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.pro-plus-plans td sup {
+  color: #000;
+}
+
+.pro-pro-plus-plans td p {
+  color: #000;
+  text-align: justify;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: normal;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.pricing-table td.feature span {
+  font-size: 24px;
+  font-weight: 600;
+  color: #0091c4;
+}
+
+.pricing-table td.feature span label {
+  color: #ff5820;
+}
+
+.pricing-table td.feature img {
+  width: 52px;
+  height: 52px;
+}
+
+.pricing-table tr td {
+  /* padding: 70px 70px 0 0; */
+  width: 282px;
+  height: 200px;
+  border-radius: 10px;
+  background: #fafafa;
+}
+
+.pricing-table td.feature {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  text-align: left;
+  border-radius: 0px;
+  background: unset;
+}
+
+.pro-pro-plus-plans td:nth-child(1) {
+  max-width: unset;
+  padding-right: 0;
+}
+
+.all-table-heading th {
+  padding-bottom: 70px;
+}
+
+.pricing-table table {
+  border-collapse: collapse;
+}
+
+.table-contennt {
+  max-width: 1569px;
+  margin: 0 auto;
+}
+
+.table-contennt h2 {
+  color: #000;
+  font-size: 32px;
+  font-weight: 600;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.table-contennt h2 span {
+  color: #0091c4;
+}
+
+.table-contennt p {
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 15px;
+}
+
+.table-contennt h3 {
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 45px;
+}
+
+.plans-affordable .at-all-glace {
+  background-image: url(../images/hughsnet-plans-page-plan-good-image.webp);
+}
+
+.plans-affordable .inter-sufring-listing p {
+  max-width: 700px;
+}
+.all-pro-packages .discount-text {
+  justify-content: center;
+}
+.all-pro-packages .discount-text span {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+}
+.all-pro-packages .discount-text strike span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* cards */
+.plans-package-background {
+  background-image: url(../images/hughsnet-plans-page-choose-pans-section-bg.webp);
+  height: 611px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  margin-top: 50px;
+}
+
+.plans-package-cards-items {
+  display: flex;
+  max-width: 1224px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.plans-package-cards-item1 {
+  background: #fff;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  padding: 21px;
+  width: 19.2%;
+}
+
+.plans-card-heading img {
+  width: unset;
+  height: 50px;
+}
+
+.plans-card-heading h3 {
+  color: #0091c4;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  padding-bottom: 15px;
+}
+
+.plans-package-cards-item1 p {
+  color: #000;
+  text-align: justify;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.choose-content h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  padding-bottom: 59px;
+}
+
+.choose-content h2 span {
+  color: #0091c4;
+}
+
+.plans-page-lines p {
+  top: -90px;
+}

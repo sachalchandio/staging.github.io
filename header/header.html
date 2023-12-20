@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./header.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="./static/images/hughsnet-logo.webp" alt="" />
+        </div>
+        <div class="menu" id="menu">
+          <a href="#">Home</a>
+          <a href="#">Internet</a>
+          <a href="#">Phone</a>
+          <a href="#">Plan</a>
+          <a href="#">Customer Service</a>
+          <a href="#">Business</a>
+        </div>
+        <div class="menu hire-developer-btn">
+          <a href="#" class="hire-dev"
+            ><img
+              src="./static/images/hughsnet-home-page-header-phone-icon.webp"
+              alt=""
+            />Call to Order</a
+          >
+        </div>
+        <div class="burger" id="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </header>
+  </body>
+  <script>
+    const burger = document.getElementById("burger");
+    const menu = document.getElementById("menu");
+
+    burger.addEventListener("click", () => {
+      menu.classList.toggle("active");
+    });
+  </script>
+</html>

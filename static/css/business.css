@@ -1,115 +1,26 @@
-.hughsenet-section {
-  display: flex;
-  max-width: 1130px;
-  margin: 0 auto;
-  height: 100%;
-  align-items: center;
-}
-
-.hughsenet-section .hughsenet-heading {
-  width: 50%;
-}
-
-.hughsenet-heading h1 {
-  color: #000;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 50px;
-  max-width: 620px;
-
-  font-weight: 300;
-}
-
-.hughsenet-heading label {
-  color: var(--color-secondary);
-  font-size: 30px;
-}
-
-.hughsenet-heading span {
-  color: #ff5820;
-}
-
-.hughsenet-heading-list {
-  margin-top: 13px;
-}
-
-.hughsenet-heading-list h3 {
-  display: flex;
-  column-gap: 9px;
-  padding-bottom: 8px;
-}
-
-.hughsenet-heading-list h3 span {
-  color: #000;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-.hughsenet-heading-list h3 span img {
-  transform: translate(0px, 2px);
-}
-
-.business-banner-section .hughsenet-heading p {
-  margin-top: 5px;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  font-family: var(--font-family-regular);
-}
-
-.main-button {
-  display: flex;
-  column-gap: 28px;
-}
-
-.main-button a {
-  display: flex;
-  border-radius: 10px;
-  background: #0091c4;
-  color: #fff;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 20px;
-  padding: 13px 16px;
-  align-items: center;
-  column-gap: 8px;
-  margin-top: 40px;
-}
-
-.main-button a img {
-  width: unset;
-}
-
-.main-button .call-icon {
-  background-color: #ff5820;
-}
-
 .business-banner-section .hughsenet-heading span {
-  color: var(--black);
+  color: #0091c4;
 }
 
 .business-banner-section .banner-background {
-  height: 672px;
-  background: url(../images/viasait-businesspage-banner-image.webp);
-  background-repeat: no-repeat;
-  padding-left: 0;
-  background-size: cover;
+  height: 840px;
+  background: url(../images/hughesnet-business-page-banner-image.webp);
 }
 
+/* business form */
 .business-banner-section .hughsenet-section {
   justify-content: space-between;
 }
 
 .business-banner-section .hughsenet-heading1 {
-  max-width: 31.4%;
+  max-width: 29.4%;
 }
 
 .top-bar {
-  background-color: var(--color-secondary);
-  font-weight: 500;
+  background-color: #0091c4;
   color: #fff;
   font-size: 24px;
+  font-weight: 600;
   line-height: 45px;
   padding: 15px 0px;
   display: flex;
@@ -138,24 +49,21 @@
   border: 0.5px solid #8d8d8d;
   background: #f9f9f9;
   color: #000;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 300;
   line-height: 18px;
   padding-left: 16px;
-  font-family: var(--font-family-light);
 }
 
 .submit-button {
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 18px;
   width: 100%;
   padding: 13px 0px;
-  background-color: var(--color-secondary);
+  background-color: #0091c4;
   border: none;
-  cursor: pointer;
-  font-family: var(--font-family-regular);
 }
 
 .form-container p {
@@ -163,18 +71,15 @@
   text-align: justify;
   font-size: 12px;
   font-weight: 300;
-  line-height: 15px;
-  font-family: var(--font-family-light);
-  margin-top: 26px;
+  line-height: 18px;
+  margin-top: 37px;
 }
 
 .business-package-background {
-  background-image: url(../images/viasat-businesspage-business-page-package-card.webp);
+  background-image: url(../images/hughesnet-business-page-package-card.webp);
+  height: 640px;
   padding-top: 98px;
-  padding-bottom: 39px;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
 }
 
 .package-cards-items {
@@ -191,13 +96,6 @@
   width: 26%;
 }
 
-.business-banner-section .top-bar a {
-  color: var(--white);
-  font-family: var(--font-family-primary);
-  font-size: 20px;
-  font-weight: 400;
-}
-
 .internet-card-heading {
   display: flex;
   align-items: center;
@@ -206,11 +104,11 @@
 }
 
 .internet-card-heading span {
+  color: #0091c4;
   font-size: 30px;
-  font-weight: 500;
+  font-style: normal;
+  font-weight: 700;
   line-height: 30px;
-  color: var(--color-secondary);
-  font-family: var(--font-family-primary);
 }
 
 .package-cards-item1 p,
@@ -220,7 +118,6 @@
   font-size: 15px;
   font-style: normal;
   font-weight: 300;
-  font-family: var(--font-family-light);
   line-height: 20px;
 }
 
@@ -231,173 +128,178 @@
   line-height: 25px;
   margin: 0 auto;
   margin-top: 70px;
-  max-width: 1252px;
+  max-width: 1563px;
   padding: 0 20px;
-  font-family: var(--font-family-light);
+}
+.hughsnet-internet-plans .all-online-fast .online-fast-heading h2 {
+  font-size: 32px;
+}
+.internet-avilable-my-area {
+  background-color: transparent;
+}
+.internet-avilable-my-area .at-all-glace {
+  background: url(../images/hughsnet-business-page-internet-services-my-area-image.webp);
+}
+.my-area-services p {
+  max-width: 670px;
+}
+.internet-avilable-my-area .glace-1 .glace-heading {
+  width: 41%;
 }
 
-.home-install-business .rulal-area-card {
-  background-color: var(--color-link);
-}
-
-.home-install-business .what-viasat-order a {
-  background-color: var(--color-primary);
-}
-.what-viasat.rulal-area.home-install-business {
-  margin-bottom: -4px;
-}
-@media only screen and (max-width: 1250px) {
-  .hughsenet-section {
-    max-width: 965px;
+@media only screen and (max-width: 1350px) {
+  .business-banner-section .hughsenet-section .hughsenet-heading {
+    width: 48%;
   }
-
-  .package-cards-items {
-    max-width: 940px;
-  }
-
-  .cards-paragraph p {
-    max-width: 1025px;
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  .hughsenet-section {
-    max-width: 840px;
-    padding: 0 20px;
-  }
-
   .business-banner-section .hughsenet-heading1 {
-    max-width: 42.4%;
+    max-width: 41.4%;
   }
-
-  .business-banner-section .banner-background {
-    background-position: 50%;
-  }
-
-  .hughsenet-heading h1 {
-    font-size: 30px;
-    line-height: 41px;
-  }
-
   .package-cards-items {
-    max-width: 800px;
+    max-width: 850px;
   }
-
   .package-cards-item1 p,
   .package-cards-item1 ul li {
     font-size: 13px;
   }
-
+  .internet-card-heading span {
+    font-size: 22px;
+  }
   .cards-paragraph p {
-    max-width: 850px;
+    font-size: 13px;
+    margin-top: 27px;
+  }
+  .hughsnet-internet-plans .all-online-fast .online-fast-heading h2 {
+    font-size: 25px;
+  }
+  .internet-avilable-my-area .glace-1 .glace-heading {
+    width: 51%;
+  }
+  .my-area-services p {
+    max-width: 451px;
+  }
+  .lot-more-value.internet-avilable-my-area .at-all-glace {
+    height: unset;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 25px 0;
+    background-position: top;
   }
 }
-
-@media only screen and (max-width: 869px) {
+@media only screen and (max-width: 941px) {
   .business-banner-section .hughsenet-section {
-    flex-direction: column;
-    row-gap: 30px;
+    flex-direction: row;
   }
-
-  .hughsenet-section .hughsenet-heading {
+  .business-banner-section .hughsenet-heading h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .all-main p {
+    font-size: 14px;
+  }
+  .top-bar {
+    font-size: 16px;
+    padding: 6px 0px;
+  }
+  .form-field input {
+    width: 93%;
+  }
+  .business-package-background {
+    padding-top: 60px;
+  }
+  .package-cards-items {
+    max-width: 714px;
+  }
+  .internet-card-heading span img {
+    max-width: 70%;
+    transform: translate(0px, 4px);
+  }
+  .internet-card-heading {
+    column-gap: 0px;
+    margin-bottom: 8px;
+  }
+  .internet-card-heading p {
+    font-size: 13px;
+    line-height: normal;
+  }
+  .cards-paragraph p {
+    font-size: 13px;
+    line-height: normal;
+  }
+  .business-package-background {
+    height: 678px;
+  }
+  .hughsnet-internet-plans .all-online-fast .online-fast-heading h2 {
+    text-align: center;
+  }
+  .internet-avilable-my-area .glace-1 .glace-heading {
     width: 100%;
   }
-
-  .business-banner-section .hughsenet-heading1 {
-    max-width: 100%;
+  .internet-avilable-my-area .glace-heading h2 {
+    max-width: 400px;
   }
-
-  .business-banner-section .banner-background {
-    height: unset;
-    padding: 40px 0px;
-    background-position: 0;
-  }
-
-  .business-banner-section .banner-headings {
-    max-width: unset;
+  .internet-avilable-my-area {
+    padding: 0 0;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .business-banner-section .banner-background {
-    background: url(../images/viasait-business-banner-background-mobile.webp);
-    height: 1189px;
-    padding: 0px;
+    background: url(../images/hughesnet-business-page-banner-image-mobile.webp);
+    height: 1280px;
+    padding-top: 34px;
   }
-
   .business-banner-section .hughsenet-section {
     flex-direction: column;
-    height: unset;
-    row-gap: 72px;
-    padding-top: 40px;
+    height: 96%;
   }
-
   .business-banner-section .hughsenet-section .hughsenet-heading,
   .business-banner-section .hughsenet-heading1 {
     width: 100%;
     max-width: 100%;
   }
-
   .package-cards-items {
     flex-direction: column;
     row-gap: 20px;
   }
-
   .package-cards-item1 {
     width: 67%;
     margin: 0 auto;
   }
-
   .business-package-background {
-    height: 1691px;
-    background: url(../images/viasat-internet-voice-video-mobile-image.webp);
+    height: 1711px;
+    background: url(../images/hughesnet-business-page-package-card-mobile.webp);
   }
-
   .internet-card-heading span {
     font-size: 30px;
   }
-
   .internet-card-heading span img {
     max-width: 100%;
     transform: unset;
   }
-
   .internet-card-heading {
     column-gap: 20px;
   }
-
   .cards-paragraph p {
-    margin-top: 210px;
-    font-size: 11px;
-    line-height: 20px;
+    margin-top: 134px;
   }
-
   .business-package-background {
     padding-top: 70px;
   }
-
   .online-fast-section.hughsnet-internet-plans {
     display: none;
   }
-
   .at-a-glance.lot-more-value.internet-avilable-my-area {
     margin-top: 0;
   }
-
   .at-a-glance.lot-more-value.internet-avilable-my-area .at-all-glace {
     background: url(../images/hughsnet-business-page-internet-services-my-area-image.-mobile-responsive.webp);
     height: 887px;
   }
-
   .at-a-glance.lot-more-value.internet-avilable-my-area .at-all-glace .glace-1 {
     justify-content: start;
   }
-
   .main-button.giving-your-more-freedom {
     justify-content: center;
     margin-top: 10px;
-  }
-  .what-viasat.rulal-area {
-    padding: 0;
   }
 }
