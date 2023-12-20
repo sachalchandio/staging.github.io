@@ -286,7 +286,8 @@ body {
   max-width: 1320px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  column-gap: 30px;
   flex-wrap: wrap;
 }
 

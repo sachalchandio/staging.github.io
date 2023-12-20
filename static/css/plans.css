@@ -136,6 +136,7 @@
 
 .pricing-table table {
   border-collapse: collapse;
+  margin: 0 auto;
 }
 
 .table-contennt {
