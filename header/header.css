@@ -70,6 +70,7 @@ body {
 
     #menu {
         padding-left: 0px;
+        display: none;
     }
 
     .menu.active {
