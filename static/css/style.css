@@ -1559,4 +1559,50 @@ a.call-icon.business-call {
   .hughsnet-services-card3 {
     width: 100%;
   }
+  .fusion-hugshnet-plan .hughsnet-cards .hughsnet-card1{
+    width: 70%;
+  }
+  .hughsnet-package-services-card1 {
+    width: 79%;
+    margin: 0 auto;
+}
+.accordion .accordion-item {
+  width: 84%;
+  margin: 15px auto;
+}
+.accordion .accordion-content p {
+  font-size: 14px;
+  line-height: 25px;
+}
+.main-button {
+  justify-content: center;
+}
+.faqs-container h2 {
+  font-size: 27px;
+  line-height: 35px;
+  margin-bottom: 20px;
+}
+.faqs-container h2 {
+  line-height: 35px;
+}
+.ligthen-fast .hugsnet-content p {
+  margin-top: 4px;
+}
+.high-speed-connectivity img {
+  max-width: 71%;
+  transform: translate(6px, 8px);
+}
+.high-speed-connectivity div{
+  text-align: center;
+}
+.high-speed-connectivity{
+  margin-bottom: 20px;
+}
+.hughsnet-services-card3 {
+  margin-top: 20px;
+  padding-bottom: 50px;
+}
+.intro-fusion .glace-heading h2 {
+  max-width: unset;
+}
 }
