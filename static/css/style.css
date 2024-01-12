@@ -69,7 +69,8 @@ body {
 }
 
 .hughsenet-heading-list {
-  margin-top: 13px;
+  margin-top: 50px;
+  height: 44%;
 }
 
 .hughsenet-heading-list h3 {
@@ -121,6 +122,10 @@ body {
   background-color: #ff5820;
 }
 
+.select-plans .discount-text {
+  opacity: 0;
+}
+
 /* online fast image */
 
 .online-fast-image {
@@ -131,9 +136,9 @@ body {
 .all-online-fast {
   display: flex;
   max-width: 1620px;
-  padding: 36px 20px;
+  padding: 20px 20px 30px;
   margin: 0 auto;
-  column-gap: 349px;
+  column-gap: 50px;
   align-items: center;
 }
 
@@ -279,7 +284,7 @@ body {
   background-image: url(../images/hughsenet-home-page-hughsnet-plan-background.webp);
   background-repeat: no-repeat;
   margin-top: 52px;
-  background-position: 71% 50%;
+  background-position: bottom;
 }
 
 .hughsnet-cards {
@@ -288,7 +293,6 @@ body {
   display: flex;
   justify-content: center;
   column-gap: 30px;
-  flex-wrap: wrap;
 }
 
 .hughsnet-card1 {
@@ -426,7 +430,7 @@ body {
 }
 
 .hughsenet-heading-list.plans-listing h3 {
-  padding-bottom: 0px;
+  padding-bottom: 10px;
   max-width: 268px;
 }
 
@@ -441,7 +445,7 @@ body {
 
 .plan-button a {
   font-size: 16px;
-  margin-top: 40px;
+  margin-top: 0px;
 }
 
 .plan-button .call-icon {
@@ -458,8 +462,24 @@ body {
 
 .plan-bottom-lines p {
   text-align: center;
-  font-size: 16px;
-  font-weight: 300;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.plans-paragraph p,
+.plans-paragraph h4,
+.plans-paragraph ul li {
+  font-size: 12px;
+}
+
+.plans-paragraph {
+  max-width: 1324px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.plans-paragraph p {
+  line-height: 1.4;
 }
 
 .get-your-plan .online-fast-image {
@@ -487,12 +507,15 @@ body {
   color: #ff5820;
 }
 
+.fusion-hugshnet-plan .fusion-card1 .starter-plan h3 {
+  line-height: 37px;
+}
+
 .hughsnet-package-services {
-  display: flex;
   max-width: 960px;
   margin: 0 auto;
   column-gap: 30px;
-  padding-top: 40px;
+
 }
 
 .hughsnet-phone-services,
@@ -507,6 +530,10 @@ body {
   column-gap: 13px;
 }
 
+.hughsnet-package-services-card1 p {
+  text-align: left;
+}
+
 .hughsnet-package-services-card1 {
   border-radius: 8px;
   border: 3px solid #0091c4;
@@ -519,6 +546,36 @@ body {
   border: 3px solid #ff5820;
   background: #fff;
   padding: 18px;
+  margin-bottom: 15px;
+}
+
+.hughsnet-package-services-card3 {
+  background-image: url(../images/mastercard-image.png);
+  text-align: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 0 30px;
+  background-position: center;
+}
+
+.hughsnet-package-services-card2 p {
+  text-align: center;
+}
+
+.hughsnet-package-services-card3 .hughsnet-bonus-zone h4 {
+  color: #0091C4;
+  font-size: 15px;
+}
+
+.hughsnet-package-services-card3 .hughsnet-bonus-zone p {
+  max-width: 233px;
+  margin: 0 auto;
+  color: #ff5820;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
 }
 
 .discount-for-three,
@@ -528,12 +585,21 @@ body {
 
 .discount-for-three {
   margin-top: 13px;
+  position: relative;
+}
+
+.hughsnet-package-services .discount-text {
+  position: absolute;
+  right: 0;
+  bottom: -27px;
+
 }
 
 .hughsnet-phone-services h4 {
   color: #000;
   font-size: 22px;
   font-weight: 600;
+  padding-bottom: 5px;
 }
 
 .hughsnet-phone-services h4 img {
@@ -545,6 +611,14 @@ body {
   font-weight: 700;
 }
 
+.hughsnet-phone-services h4:nth-child(2) {
+  max-width: 217px;
+}
+
+.hughsnet-phone-services {
+  align-items: start;
+}
+
 .hughsnet-phone-services p {
   line-height: normal;
 }
@@ -554,12 +628,14 @@ body {
   font-size: 24px;
   font-weight: 700;
   line-height: 37px;
+  max-width: 215px;
 }
 
 .discount-for-three h4 {
   color: #000;
   font-size: 18px;
   font-weight: 600;
+  padding-bottom: 15px;
 }
 
 .discount-for-three h4 label {
@@ -611,10 +687,13 @@ body {
 .fusion-hugshnet-plan .hughsnet-plan-background {
   background: url(../images/hughsnet-home-page-fusion-section-background-image.webp);
   margin-top: 0px;
+  background-repeat: no-repeat;
 }
 
 .fusion-hugshnet-plan .hughsnet-cards {
   max-width: 1350px;
+  flex-wrap: wrap;
+  row-gap: 20px;
 }
 
 .starter-plan sup {
@@ -623,6 +702,20 @@ body {
 
 .fusion-hugshnet-plan .plan-button a {
   margin-top: 20px;
+}
+
+.fusion-hugshnet-plan .hughsnet-package-services {
+  margin-top: 20px;
+}
+
+.fusion-hugshnet-plan .hughsnet-package-services-card2 {
+  margin-top: 20px;
+}
+
+.fusion-hugshnet-plan .hughsnet-package-services-card2 {
+  width: 50%;
+  margin: 14px auto;
+  text-align: center;
 }
 
 a.call-icon.business-call {
@@ -788,7 +881,7 @@ a.call-icon.business-call {
   width: 0;
 }
 
-.accordion button[aria-expanded="true"] + .accordion-content {
+.accordion button[aria-expanded="true"]+.accordion-content {
   opacity: 1;
   max-height: unset;
   transition: all 200ms linear;
@@ -841,28 +934,32 @@ a.call-icon.business-call {
   line-height: 25px;
   max-width: 1400px;
   margin-top: 25px;
+  padding: 0 20px;
 }
 
 .hughsnet-services-background {
   display: flex;
-  max-width: 1620px;
+  max-width: 1420px;
   margin: 0 auto;
   padding: 0 20px;
   justify-content: space-between;
   align-items: center;
   margin-top: 27px;
+  column-gap: 22px;
 }
 
 .hughsnet-services-card1 {
   width: 24%;
+  padding-bottom: 70px;
 }
 
-.hughsnet-services-card1 {
+/* .hughsnet-services-card2 {
   width: 40%;
-}
+} */
 
-.hughsnet-services-card1 {
+.hughsnet-services-card3 {
   width: 25%;
+  padding-bottom: 70px;
 }
 
 .high-speed-connectivity {
@@ -882,7 +979,7 @@ a.call-icon.business-call {
 
 .hugsnet-content p {
   color: #000;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
   text-align: right;
   line-height: normal;
@@ -906,9 +1003,11 @@ a.call-icon.business-call {
 .ligthen-fast .hugsnet-content p {
   text-align: left;
 }
+
 .hughsnet-services-card2 img {
   transform: translate(0px, 5px);
 }
+
 .ligthen-fast .high-speed-connectivity {
   border-radius: 0px 46.5px 46.5px 0px;
   background: #fff;
@@ -916,6 +1015,7 @@ a.call-icon.business-call {
 }
 
 @media only screen and (max-width: 1600px) {
+
   .hughsenet-section,
   .all-online-fast,
   .glace-1,
@@ -951,10 +1051,6 @@ a.call-icon.business-call {
     font-size: 16px;
   }
 
-  .all-online-fast {
-    column-gap: 298px;
-  }
-
   .glace-heading h2 {
     font-size: 25px;
   }
@@ -962,7 +1058,13 @@ a.call-icon.business-call {
   .intro-fusion .glace-1 .glace-heading {
     width: 40%;
   }
+
+  .hugsnet-content p {
+    font-size: 13px;
+  }
 }
+
+@media only screen and (max-width: 1440px) {}
 
 @media only screen and (max-width: 1340px) {
   .hughsenet-section .hughsenet-heading {
@@ -985,7 +1087,7 @@ a.call-icon.business-call {
   }
 
   .all-online-fast .online-fast-heading h3 {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .glacing-hughsnet .glace-heading-image img {
@@ -1030,6 +1132,31 @@ a.call-icon.business-call {
 
   .inter-sufring-listing ul li {
     font-size: 14px;
+  }
+
+  .hughsnet-plan-section .hughsnet-cards {
+    flex-wrap: wrap;
+  }
+
+  .hughsnet-card1 {
+    width: 24.6%;
+  }
+
+  .hughsenet-heading-list {
+    height: 33%;
+  }
+
+  .hughsnet-package-services-card3 {
+    margin: 20px 0px;
+  }
+
+  .hughsnet-package-services-card2 {
+    width: 50%;
+    margin: 14px auto;
+    text-align: center;
+  }
+  .plan-bottom-lines p{
+    padding: 0 20px;
   }
 }
 
@@ -1103,6 +1230,7 @@ a.call-icon.business-call {
 }
 
 @media only screen and (max-width: 899px) {
+
   .hughsenet-section,
   .all-online-fast,
   .glace-1 {
