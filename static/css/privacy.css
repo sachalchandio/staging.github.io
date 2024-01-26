@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p {
+    margin: 0;
+  }
+  
+  .all-main {
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  .layout-container {
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 5rem 1rem;
+  }
+  
+  .layout-container p {
+    font-size: 19px;
+    line-height: 1.2;
+    margin: 20px 0;
+  }
+  .layout-container p a{
+    color: #0096fa;
+  }
+  .node.node--type-legal-resources.node--view-mode-default h2 a{
+    text-decoration: none;
+    color: #0096fa;
+  }
